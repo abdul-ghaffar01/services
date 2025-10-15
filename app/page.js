@@ -1,6 +1,9 @@
+import ContactSection from "@/components/Contact";
 import DeploymentSection from "@/components/DeploymentSection";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import TechStackSection from "@/components/TechStack";
 import WebDevSection from "@/components/WebDev";
 
 // ✅ This is a Server Component by default in Next.js App Router
@@ -19,6 +22,9 @@ export default function Home() {
         <Hero />
         <WebDevSection />
         <DeploymentSection />
+        <TechStackSection />
+        <ContactSection />
+        <Footer />
       </div>
     </main>
   );
