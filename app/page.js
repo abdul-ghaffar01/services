@@ -1,3 +1,4 @@
+import DeploymentSection from "@/components/DeploymentSection";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import WebDevSection from "@/components/WebDev";
@@ -17,6 +18,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <WebDevSection />
+        <DeploymentSection />
       </div>
     </main>
   );
