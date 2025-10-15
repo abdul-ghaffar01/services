@@ -1,3 +1,5 @@
+import Hero from "@/components/Hero";
+
 // ✅ This is a Server Component by default in Next.js App Router
 export default function Home() {
   return (
@@ -9,9 +11,7 @@ export default function Home() {
       </div>
 
       {/* Fast initial view */}
-      <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-        AG <span className="text-blue-400">S2</span> House
-      </h1>
+      <Hero />
     </main>
   );
 }
