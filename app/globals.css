@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+/* ==============================
+   Global Color & Font Variables
+   ============================== */
+:root {
+  /* Light Mode Colors */
+  --background: #f8fafc; /* light grey-blue */
+  --foreground: #0f172a; /* deep navy text */
+  --primary: #3b82f6; /* soft blue */
+  --primary-hover: #2563eb; /* darker blue on hover */
+  --secondary: #64748b; /* slate grey */
+  --accent: #60a5fa; /* accent blue */
+  --muted: #e2e8f0; /* light grey for cards or borders */
+  --border: #cbd5e1;
+
+  /* Shadows & Transitions */
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --transition: 0.2s ease-in-out;
+}
+
+@theme inline {
+  /* Tailwind variable mappings */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+
+  --font-sans: var(--font-geist-sans, 'Inter', sans-serif);
+  --font-mono: var(--font-geist-mono, 'JetBrains Mono', monospace);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f172a; /* deep navy background */
+    --foreground: #f1f5f9; /* soft white text */
+    --primary: #60a5fa; /* light blue */
+    --primary-hover: #3b82f6;
+    --secondary: #94a3b8; /* slate grey text */
+    --accent: #38bdf8; /* cyan accent */
+    --muted: #1e293b; /* dark card background */
+    --border: #334155; /* darker borders */
+    --shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* ==============================
+   Base Styles
+   ============================== */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  transition: background-color var(--transition), color var(--transition);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Optional Utility Styles */
+a {
+  color: var(--primary);
+  transition: color var(--transition);
+}
+a:hover {
+  color: var(--primary-hover);
+}
+
+.card {
+  background-color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  padding: 1.25rem;
+}
+
+.btn {
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  transition: background-color var(--transition), transform var(--transition);
+}
+.btn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+
+
