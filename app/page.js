@@ -1,9 +1,11 @@
 import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import WebDevSection from "@/components/WebDev";
 
 // ✅ This is a Server Component by default in Next.js App Router
 export default function Home() {
   return (
-    <main className="relative min-h-screen w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950 text-white flex items-center justify-center overflow-hidden">
+    <main className="relative min-h-screen w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950 text-white">
       {/* Subtle blurred background shapes */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute top-1/4 left-1/3 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[160px] animate-pulse"></div>
@@ -11,7 +13,11 @@ export default function Home() {
       </div>
 
       {/* Fast initial view */}
-      <Hero />
+      <div className="flex flex-col">
+        <Navbar />
+        <Hero />
+        <WebDevSection />
+      </div>
     </main>
   );
 }
