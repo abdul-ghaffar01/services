@@ -4,6 +4,19 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const links = [
+    {
+      name: "Home",
+      href: "#home",
+    },
+    {
+      name: "Web Development",
+      href: "#web-development",
+    },
+    { name: "Deployment", href: "#deployment" },
+    { name: "Tech Stack", href: "#tech-stack" },
+    { name: "Contact", href: "#contact" },
+  ]
 
   return (
     <footer className="relative bg-[#0b0d12] text-gray-300 border-t border-slate-800/50 py-12">
@@ -33,14 +46,14 @@ export default function Footer() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="flex flex-wrap justify-center gap-6 text-sm"
         >
-          {["Home", "Web Development", "Deployment", "Tech Stack", "Contact"].map(
-            (item) => (
-              <li key={item}>
+          {links.map(
+            (item, index) => (
+              <li key={index}>
                 <a
-                  href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
+                  href={item.href}
                   className="hover:text-blue-400 transition-colors"
                 >
-                  {item}
+                  {item.name}
                 </a>
               </li>
             )
@@ -55,21 +68,21 @@ export default function Footer() {
           className="flex gap-4"
         >
           <a
-            href="https://github.com/"
+            href="https://github.com/abdul-ghaffar01"
             target="_blank"
             className="text-gray-400 hover:text-blue-400 transition-colors"
           >
             <FaGithub size={20} />
           </a>
           <a
-            href="https://linkedin.com/"
+            href="https://linkedin.com/in/abdul-ghaffar01"
             target="_blank"
             className="text-gray-400 hover:text-blue-400 transition-colors"
           >
             <FaLinkedin size={20} />
           </a>
           <a
-            href="mailto:abdulghaffar@example.com"
+            href="mailto:agscontact@example.com"
             className="text-gray-400 hover:text-blue-400 transition-colors"
           >
             <FaEnvelope size={20} />

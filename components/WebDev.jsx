@@ -29,7 +29,7 @@ export default function WebDevSection() {
 
   return (
     <section
-      id="services"
+      id="web-development"
       className="relative py-24 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-gray-200 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-16 px-6">

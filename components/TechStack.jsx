@@ -49,7 +49,7 @@ const techStack = [
 
 export default function TechStackSection() {
     return (
-        <section className="relative py-28 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.05)_1px,transparent_0)] [background-size:24px_24px] bg-gradient-to-b from-indigo-950 via-slate-950 to-slate-900 text-gray-200 overflow-hidden">
+        <section id="tech-stack" className="relative py-28 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.05)_1px,transparent_0)] [background-size:24px_24px] bg-gradient-to-b from-indigo-950 via-slate-950 to-slate-900 text-gray-200 overflow-hidden">
 
             {/* Background glow */}
             <div className="absolute -z-10 inset-0">

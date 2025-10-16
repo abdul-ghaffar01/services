@@ -30,8 +30,8 @@
   --color-muted: var(--muted);
   --color-border: var(--border);
 
-  --font-sans: var(--font-geist-sans, 'Inter', sans-serif);
-  --font-mono: var(--font-geist-mono, 'JetBrains Mono', monospace);
+  --font-sans: var(--font-geist-sans, "Inter", sans-serif);
+  --font-mono: var(--font-geist-mono, "JetBrains Mono", monospace);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -51,6 +51,10 @@
 /* ==============================
    Base Styles
    ============================== */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--background);
   color: var(--foreground);
@@ -90,14 +94,15 @@ a:hover {
   transform: translateY(-1px);
 }
 
-
 @keyframes pulse-slow {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.7; }
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.7;
+  }
 }
 .animate-pulse-slow {
   animation: pulse-slow 6s ease-in-out infinite;
 }
-
-
-

@@ -7,7 +7,19 @@ import { Menu, X } from "lucide-react";
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
-
+    const links = [
+        {
+            name: "Home",
+            href: "#home",
+        },
+        {
+            name: "Web Development",
+            href: "#web-development",
+        },
+        { name: "Deployment", href: "#deployment" },
+        { name: "Tech Stack", href: "#tech-stack" },
+        { name: "Contact", href: "#contact" },
+    ]
     // Change style when scrolling
     useEffect(() => {
         const handleScroll = () => setIsScrolled(window.scrollY > 10);
@@ -21,8 +33,8 @@ export default function Navbar() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
             className={`fixed top-0 w-full z-50 transition-all duration-500 ${isScrolled
-                    ? "backdrop-blur-md bg-slate-900/70 border-b border-slate-700/50 shadow-lg"
-                    : "bg-transparent"
+                ? "backdrop-blur-md bg-slate-900/70 border-b border-slate-700/50 shadow-lg"
+                : "bg-transparent"
                 }`}
         >
             <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
@@ -36,13 +48,13 @@ export default function Navbar() {
 
                 {/* ====== Desktop Links ====== */}
                 <div className="hidden md:flex gap-8 text-gray-300 font-medium">
-                    {["Home", "Services", "Projects", "About", "Contact"].map((item) => (
+                    {links.map((item, index) => (
                         <a
-                            key={item}
-                            href={`#${item.toLowerCase()}`}
+                            key={index}
+                            href={item.href}
                             className="hover:text-blue-400 transition"
                         >
-                            {item}
+                            {item.name}
                         </a>
                     ))}
                 </div>
@@ -67,15 +79,15 @@ export default function Navbar() {
                         className="md:hidden bg-slate-900/95 backdrop-blur-md border-t border-slate-800/50"
                     >
                         <div className="flex flex-col items-center py-4 space-y-4 text-gray-300">
-                            {["Home", "Services", "Projects", "About", "Contact"].map(
-                                (item) => (
+                            {links.map(
+                                (item, index) => (
                                     <a
-                                        key={item}
-                                        href={`#${item.toLowerCase()}`}
+                                        key={index}
+                                        href={item.href}
                                         className="hover:text-blue-400 transition text-lg"
                                         onClick={() => setMenuOpen(false)}
                                     >
-                                        {item}
+                                        {item.name}
                                     </a>
                                 )
                             )}
