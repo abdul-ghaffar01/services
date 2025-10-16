@@ -8,14 +8,8 @@ export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const links = [
-        {
-            name: "Home",
-            href: "#home",
-        },
-        {
-            name: "Web Development",
-            href: "#web-development",
-        },
+        { name: "Home", href: "#home", },
+        { name: "Web Development", href: "#web-development", },
         { name: "Deployment", href: "#deployment" },
         { name: "Tech Stack", href: "#tech-stack" },
         { name: "Contact", href: "#contact" },
