@@ -3,6 +3,7 @@ import DeploymentSection from "@/components/DeploymentSection";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import DeployedProjectsSection from "@/components/Projects";
 import TechStackSection from "@/components/TechStack";
 import TestimonialSection from "@/components/Testimonial";
 import WebDevSection from "@/components/WebDev";
@@ -24,6 +25,7 @@ export default function Home() {
         <WebDevSection />
         <DeploymentSection />
         <TechStackSection />
+        <DeployedProjectsSection />
         <TestimonialSection />
         <ContactSection />
         <Footer />
