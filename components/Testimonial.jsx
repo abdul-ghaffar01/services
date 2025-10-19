@@ -2,14 +2,14 @@
 import { motion } from "framer-motion";
 const testimonials = [
     {
-        name: "Zain Ali",
+        name: "Maqsood Ahmed",
         role: "Startup Founder",
         quote:
             "AG S2 House turned our concept into a fully functional product — fast, efficient, and visually stunning work.",
         avatar: "https://i.pravatar.cc/100?img=12",
     },
     {
-        name: "Sara Khan",
+        name: "Sajad Ahmed",
         role: "UI/UX Designer",
         quote:
             "Their attention to performance and pixel-perfect design is unmatched. Everything launched smoothly and on time.",

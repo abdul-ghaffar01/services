@@ -6,22 +6,22 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    name: "Portfolio Website",
+    name: "Portfolio",
     description: "Personal site built with Next.js and Tailwind.",
     image: '/project-images/portfolio.png',
     link: "https://iabdulghaffar.com",
   },
   {
-    name: "AG Server Dashboard",
-    description: "Real-time Dockerized server monitoring platform.",
+    name: "Blogs",
+    description: "A blog website that features dynamic content.",
     image: '/project-images/blogs.png',
-    link: "https://dashboard.iabdulghaffar.com",
+    link: "https://blogs.iabdulghaffar.com",
   },
   {
-    name: "E-Commerce UI",
-    description: "Modern storefront with REST API and fast rendering.",
+    name: "Chatbot",
+    description: "AI-powered chatbot for instant support.",
     image: '/project-images/chatbot.png',
-    link: "https://shop.iabdulghaffar.com",
+    link: "https://chat.iabdulghaffar.com",
   },
 ];
 
@@ -51,7 +51,7 @@ export default function DeployedProjectsMarquee() {
   return (
     <section
       id="projects"
-      className="relative py-28 bg-gradient-to-b from-[#0b1120] via-[#0f172a] to-[#10192f] text-gray-100 overflow-hidden"
+      className="relative py-28 bg-gradient-to-b from-[#0b1120] via-[#0f172a] to-[#10192f] text-gray-100 overflow-hidden md:h-[100dvh] flex items-center flex-col"
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.15),transparent_70%)] pointer-events-none" />
 

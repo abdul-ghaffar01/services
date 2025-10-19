@@ -28,7 +28,7 @@ export default function DigitalMarketing3D() {
   ];
 
   return (
-    <section className="relative bg-gray-900 text-gray-100 py-24 overflow-hidden">
+    <section id="digital-marketing" className="relative bg-gray-900 text-gray-100 py-24 overflow-hidden md:h-[100dvh] flex items-center">
       {/* ==== Animated 3D Glow Background ==== */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -93,13 +93,13 @@ export default function DigitalMarketing3D() {
         </div>
 
         <motion.a
-          href="https://services.iabdulghaffar.com/digital-marketing"
+          href="#contact"
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 100 }}
           style={{color: "white"}}
           className="inline-block mt-16 px-10 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-medium rounded-xl shadow-lg hover:shadow-indigo-400/20 transition-all"
         >
-          Explore Full Strategy →
+          Contact for collaboration →
         </motion.a>
       </div>
 

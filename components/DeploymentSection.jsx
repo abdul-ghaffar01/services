@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Server, Cloud, Network, Rocket } from "lucide-react";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function DeploymentSection() {
@@ -21,7 +22,7 @@ export default function DeploymentSection() {
     return (
         <section
             id="deployment"
-            className="relative py-28 bg-gradient-to-t from-slate-950 via-slate-900 to-indigo-950 text-gray-200 overflow-hidden"
+            className="relative py-28 bg-gradient-to-t from-slate-950 via-slate-900 to-indigo-950 text-gray-200 overflow-hidden md:h-[100dvh] flex items-center"
         >
             {/* ===== Dynamic Floating Bubbles ===== */}
             <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -86,9 +87,9 @@ export default function DeploymentSection() {
                         ))}
                     </div>
 
-                    <button className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold shadow-md transition">
+                    <Link style={{color: "white"}} href="#contact" className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold shadow-md transition">
                         Deploy With Me
-                    </button>
+                    </Link>
                 </motion.div>
 
                 {/* ===== LEFT: SERVER MOCKUP ===== */}

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Code2, Layout, Rocket } from "lucide-react";
+import Link from "next/link";
 
 export default function WebDevSection() {
   const [displayedText, setDisplayedText] = useState("");
@@ -30,7 +31,7 @@ export default function WebDevSection() {
   return (
     <section
       id="web-development"
-      className="relative py-24 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-gray-200 overflow-hidden"
+      className="relative py-24 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-gray-200 overflow-hidden md:h-[100dvh] flex items-center"
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-16 px-6">
         {/* ====== LEFT: TEXT ====== */}
@@ -48,7 +49,7 @@ export default function WebDevSection() {
           <p className="text-gray-400 text-lg mb-8 max-w-lg">
             I build lightning-fast, responsive, and SEO-optimized websites using{" "}
             <span className="text-blue-300">Next.js</span> and{" "}
-            <span className="text-blue-300">Tailwind CSS</span>.  
+            <span className="text-blue-300">Tailwind CSS</span>.
             Every project is crafted with performance, scalability, and
             creativity in mind.
           </p>
@@ -68,9 +69,11 @@ export default function WebDevSection() {
             </div>
           </div>
 
-          <button className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold shadow-md transition">
+          <Link href="#contact"
+          style={{color: "white"}}
+          className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold shadow-md transition">
             Start Your Project
-          </button>
+          </Link>
         </motion.div>
 
         {/* ====== RIGHT: ANIMATED CODE MOCKUP ====== */}
