@@ -7,7 +7,7 @@ import DeployedProjectsSection from "@/components/Projects";
 import TechStackSection from "@/components/TechStack";
 import TestimonialSection from "@/components/Testimonial";
 import WebDevSection from "@/components/WebDev";
-
+import DigitalMarketingSection from "@/components/DigitalMarketing";
 // ✅ This is a Server Component by default in Next.js App Router
 export default function Home() {
   return (
@@ -24,6 +24,7 @@ export default function Home() {
         <Hero />
         <WebDevSection />
         <DeploymentSection />
+        <DigitalMarketingSection />
         <TechStackSection />
         <DeployedProjectsSection />
         <TestimonialSection />
