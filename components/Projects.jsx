@@ -10,6 +10,11 @@ const projects = [
     description: "Personal site built with Next.js and Tailwind.",
     image: '/project-images/portfolio.png',
     link: "https://iabdulghaffar.com",
+  }, {
+    name: "Maqsood-dev",
+    description: "Deployed a developer portfolio website.",
+    image: '/project-images/maqsood-dev.png',
+    link: "https://www.maqsood-dev.online/",
   },
   {
     name: "Blogs",
